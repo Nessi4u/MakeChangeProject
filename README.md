@@ -1,4 +1,4 @@
-Make Change Project
+##Make Change Project
 
 ## Description
 This Make Change Project will calculate the amount of change to return to the customer in each individual
@@ -8,9 +8,9 @@ ask for a smaller bill. If you pay under the price of the goods, the "shop" will
 
 ## How To Use
 You will first be prompted for an "item price", you are allowed to enter any number with a decimal to include a negative.
-Press Enter
+Press Enter,
 You will then be prompted for the amount you are "paying", you are allowed to enter any number with a decimal to include a negative.
-Press Enter
+Press Enter,
 Depending on what you inputed, a narrative will display or the loop may repeat. 
 
 ## What I Learned
@@ -26,6 +26,6 @@ I can improve this code by learning how to create methods that can still initial
 code "cleaner" and easier to read. In addition, I would love to see if there is an easier way to express the Mod equations I
 created for each currency unit. 
 
-#Technologies Used
+##Technologies Used
 Java, Exlipse, Git, Github
 

@@ -23,8 +23,8 @@ public class MakeChange {
 			continue;
 		}
 		while (moneyPaid > itemPrice + 100) {
-				System.out.println("Sorry, the most change we can give is $100, do you have anything smaller?");
-				moneyPaid = askUser.nextDouble();
+			System.out.println("Sorry, the most change we can give is $100, do you have anything smaller?");
+			moneyPaid = askUser.nextDouble();
 			continue;
 		}
 
@@ -67,12 +67,9 @@ public class MakeChange {
 				if (resultEight >= 1) {
 				System.out.print((Math.round(resultEight)) + " penny(s), ");
 				}
-		
-		}
-
+			}
 		askUser.close();
-	}
-
+		}
 }
 
 //site: https://github.com/SkillDistillery/SD35/blob/main/jfop/MakeChange/README.md
