@@ -11,14 +11,23 @@ public class MakeChange {
 		System.out.print("How much will you be paying? ");
 		double moneyPaid = askUser.nextDouble();
 
-		if (moneyPaid < itemPrice) {
+		while (moneyPaid < itemPrice) {
 			double notEnough = 0.00;
 			notEnough = (itemPrice - moneyPaid);
 			System.out.print("Sorry but you're short $");
 			System.out.printf("%.2f", notEnough);
 			System.out.print(" dollar(s), how much will you acutally be paying? ");
-			moneyPaid = askUser.nextDouble(); //does not loop if I do less again
+			moneyPaid = askUser.nextDouble(); // does not loop if I do less again
+			continue;
 		}
+		while (moneyPaid > itemPrice) {
+			if (moneyPaid > itemPrice + 100) {
+				System.out.println("Sorry, the largest bills we take are $100s, do you have anything else?");
+				moneyPaid = askUser.nextDouble();
+			}
+			continue;
+		}
+
 		if (moneyPaid == itemPrice) {
 			System.out.println("Awesome, that's the perfect amount, we hope you come back soon!");
 
@@ -26,6 +35,9 @@ public class MakeChange {
 
 		askUser.close();
 	}
+	// public static void menu() {
+
+	// }
 
 }
 
