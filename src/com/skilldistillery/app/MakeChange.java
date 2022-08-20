@@ -37,7 +37,7 @@ public class MakeChange {
 				
 			double resultOne = (change/jackson);
 				if (resultOne >= 1) {
-					System.out.print((int)resultOne + " twenty dollar bill(s), ");
+				System.out.print((int)resultOne + " twenty dollar bill(s), ");
 				}
 			double resultTwo =  ((change%jackson)/hamilton);
 				if (resultTwo >= 1) {
